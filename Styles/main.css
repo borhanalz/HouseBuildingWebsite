@@ -1,0 +1,569 @@
+@font-face {
+        font-family: fanavar;
+        src: url("../Fonts/FANAVARI-REGULAR.TTF");
+        src: url("../Fonts/FANAVARI-BOLD.TTF");
+}
+
+* {
+        direction: rtl;
+        margin: 0;
+        font-family: fanavar;
+}
+
+body {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+        width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgb(255, 255, 255);
+        border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+        background: #1e65fe;
+        border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+        background: #1e65fe;
+}
+
+a {
+        text-decoration: none;
+}
+
+header {
+        background-color: #ffcc33;
+        height: 100px;
+        width: 100%;
+}
+
+.nav_items a {
+        color: black;
+        font-size: 23px;
+}
+
+.nav_items a:hover {
+        color: #1e65fe;
+}
+
+#search_txt,
+#search_navbar {
+        /* width: 450px;*/
+        height: 40px;
+        display: none;
+        border-radius: 20px;
+        padding-right: 15px;
+        border: none;
+        margin-left: 15px;
+        outline: none;
+}
+
+#search_navbar {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.icons {
+        color: #1e65fe;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 25px;
+}
+
+#logo {
+        width: 200px;
+}
+
+.icon_div {
+        float: left;
+        margin-top: 35px;
+}
+
+.ul_big {
+        padding: 0;
+}
+
+
+#hamburgry_ico {
+        font-size: 50px;
+        margin-top: 20px;
+}
+#logo2 {
+        float: left;
+        width: 250px;
+        margin-top: 35px;
+}
+
+#hamburgry_menu {
+        width: 400px;
+        height: 100vh;
+        top: 0;
+        right: -400px;
+        background-color: #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        z-index: 1;
+}
+
+#logo_ham {
+        width: 250px;
+        margin-top: 20px;
+}
+
+.exit_ico {
+        float: left;
+        font-size: 30px;
+        color: #1e65fe;
+        margin-left: 15px;
+        margin-top: 10px;
+        cursor: pointer;
+}
+
+.hidden {
+        display: none;
+}
+
+.okyem {
+        display: none;
+}
+
+.foggy {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.336);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+}
+#small_nav {
+        display: none;
+}
+
+.banner_container {
+        width: 100%;
+        height: 500px;
+        background-color: #ffcc33;
+}
+
+.image_banner {
+        width: 450px;
+}
+
+.txt_banner {
+        color: #1e65fe;
+        font-size: 50px;
+        margin-top: 110px;
+}
+
+.txt_banner:first-child {
+        direction: ltr;
+}
+
+.about_btn {
+        background-color: #1e65fe;
+        height: 45px;
+        margin-right: 60px;
+        margin-top: 50px;
+        width: 170px;
+        border-radius: 20px;
+        border: none;
+        color: #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.text_banner {
+        color: #1e65fe;
+}
+
+.left_banner {
+        left: -400px;
+        z-index: -1;
+}
+
+.div_banner {
+        z-index: -1;
+        right: -400px;
+}
+
+.show_element_banner {
+        z-index: 0;
+}
+
+.circle {
+        height: 180px;
+        width: 180px;
+        background-color: #ffcc33;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+                rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.okok {
+        height: 700px;
+}
+
+.gotop {
+        color: #1e65fe;
+        cursor: pointer;
+        right: 50px;
+        top: 850px;
+        transition: ease-out 0.3s;
+}
+
+.container_engs {
+        width: 375px;
+        height: 375px;
+}
+
+#engineers {
+        width: 500px;
+        height: 500px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#img_eng {
+        width: 200px;
+        border-radius: 10px;
+}
+
+.siblings{
+        color: #1e65fe;
+        margin-top: 50%;
+        cursor: pointer;
+        transition: ease-in 0.2s;
+}
+
+.gotop:hover {
+        color: #000;
+}
+
+.siblings:hover,.btn_arrow:hover {
+        color: black !important;
+}
+
+
+.colortheme1 {
+        color: #1e65fe;
+}
+
+.colortheme2 {
+        color: #ffcc33;
+}
+
+.description {
+        transition: ease-out 0.3s;
+}
+
+.title_eng_body {
+        border-right: 5px solid #ffcc33;
+        font-size: 35px;
+        padding-right: 10px;
+}
+
+.sign_container {
+        height: 400px;
+        border-radius: 15px;
+        width: 270px;
+        background-color: #ffff;
+        z-index: 1;
+        padding-right: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.sign_page_btn {
+        width: 110px;
+        background-color: transparent;
+        border: none;
+        margin-top: 4px;
+        padding: 10px;
+}
+
+.active_sign {
+        border-bottom: 3px solid #ffcc33;
+}
+
+.txt_form {
+        height: 40px;
+        width: 220px;
+        border-radius: 10px;
+        margin-top: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.164);
+        margin-right: 15px;
+        outline: none;
+        padding-right: 10px;
+        font-size: 15px;
+        font-weight: normal;
+}
+
+.txt_form::placeholder {
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.336);
+}
+
+.btn_signup2,
+.btn_signin2,
+.btn_signup,
+.btn_signin {
+        background-color: #ffcc33;
+        height: 40px;
+        margin-top: 10px;
+        margin-right: 25px;
+        font-size: 18px;
+        width: 190px;
+        border-radius: 10px;
+        border: none;
+        transition: all ease-in 0.3s;
+}
+
+.btn_signup2:hover,
+.btn_signin2:hover,
+.btn_signup:hover,
+.btn_signin:hover {
+        background-color: #000;
+        color: #ffff;
+}
+
+.error_sign {
+        margin: 0;
+        font-size: 15px;
+        margin-right: 20px;
+        color: #fff;
+}
+
+.error_true {
+        color: red;
+}
+
+.slider_container {
+        border-radius:15px;
+        background-color: #ffff;
+        height: 700px;
+        width: 100%;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+        .btn_arrow {
+        color: #1e65fe;
+        cursor: pointer;
+        margin-top: 25%;
+        transition: ease-in 0.2s;
+        z-index: 1;
+}
+.sliders {
+        width: 800px;
+        height: 650px;
+}
+.slider {
+        width: 100%;
+        height: 100%;
+        transition: all ease-in-out 0.4s;
+}
+.img_slider_own {
+        width: 100%;
+        border-radius: 10px;
+}
+
+
+.custom-shape-divider-top-1647269774 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1647269774 svg {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 78px;
+    }
+    
+    .custom-shape-divider-top-1647269774 .shape-fill {
+        fill: #FFFFFF;
+    }
+
+
+footer {
+        background-color: #ffcc33;
+        height: 400px;
+        width: 100%;
+}
+
+.contact,.others {
+        color: #1e65fe;
+}
+.mouse {
+        cursor: pointer;
+}
+.socials {
+        color: #1e65fe;
+}
+
+footer li {
+        color: #000 !important;
+}
+
+.img_sub {
+        width: 200px;
+        border-radius: 5px;
+}
+
+.more {
+        background-color: #1e65fe;
+        height: 40px;
+        width: 150px;
+        border-radius: 15px;
+        border:none;
+        transition: ease-in 0.2s;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.more:hover {
+        background-color: #000;
+}
+
+.phone_back {
+        width: 500px;
+        height: 300px;
+        background-image: url("../Media/img/phone-02_generated.jpg");
+        background-size: 500px;
+        background-position: center;
+}
+
+iframe {
+        border-radius: 10px;
+        right: 185px;
+        top: 20px;
+        z-index: 10;
+}
+
+#submenu_homes {
+        height: 250px;
+        width: 240px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        z-index: 1;
+        display: none;
+}
+
+.sub_items {
+        color: #000;
+}
+
+.sub_lux {
+        width: 250px;
+        height: 250px;
+        background-color: #fff;
+        right: 250px;
+        display: none;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+canvas {
+        z-index: -10;
+        position: fixed;
+}
+
+@media screen and (max-width: 1400px) {
+        #big_nav {
+                display: none;
+        }
+        #small_nav {
+                display: block;
+        }
+}
+
+@media screen and (max-width:1200px){
+        footer {
+                height: 800px;
+        }
+}
+
+@media screen and (max-width: 1000px) {
+        .image_banner {
+                width: 350px;
+        }
+
+        .txt_banner {
+                font-size: 40px;
+        }
+
+        .text_banner {
+                font-size: 20px !important;
+        }
+}
+@media screen and (max-width: 750px) {
+        .image_banner {
+                width: 280px;
+        }
+
+        .txt_banner {
+                font-size: 35px;
+        }
+
+        .text_banner {
+                font-size: 15px !important;
+        }
+        .about_btn {
+                height: 30px;
+                width: 130px;
+        }
+}
+@media screen and (max-width: 538px) {
+        .image_banner {
+                width: 200px;
+        }
+
+        .txt_banner {
+                font-size: 30px;
+        }
+        .div_banner {
+                top: 200px;
+        }
+        .about_btn {
+                height: 20px;
+                width: 100px;
+                font-size: 10px;
+        }
+}
+@media screen and (max-width: 400px) {
+        #hamburgry_menu {
+                width: 280px;
+        }
+        #logo_ham {
+                width: 180px;
+        }
+        footer {
+                height: 1000px;
+        }
+}
+@media screen and (max-width: 340px) {
+        #hamburgry_ico {
+                font-size: 30px;
+                margin-top: 30px;
+        }
+        #logo2 {
+                width: 190px;
+        }
+        .div_banner {
+                top: 250px;
+        }
+}
